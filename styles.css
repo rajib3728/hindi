@@ -1,0 +1,124 @@
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.container h1
+{
+    font-size: 3em;
+    color:#a13aba;
+}
+.txt1
+
+{
+    font-size: 1.5em;
+    color: #a13aba;
+    margin-top: 60px;
+}
+.img1
+{
+    width: 230px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+  /* Container for the loading bar */
+    .loading-container {
+      width: 100%; /* Full width */
+      max-width: 200px; /* Optional: Limit the width */
+      height: 7px; /* Height of the bar */
+      background-color: #e0e0e0; /* Light gray background */
+      border-radius: 10px; /* Rounded corners */
+      overflow: hidden; /* Prevent overflow of the inner bar */
+      margin: 40px auto; /* Center the container */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    }
+
+    /* The animated loading bar */
+    .loading-bar {
+      height: 100%; /* Full height of the container */
+      width: 0%; /* Start with 0% width */
+      background-color: #a13aba; /* Green color */
+      animation: loading 5s infinite; /* Animation: 2 seconds, infinite loop */
+    }
+
+    /* Keyframes for the loading animation */
+    @keyframes loading {
+      0% {
+        width: 0%; /* Start at 0% width */
+      }
+      100% {
+        width: 100%; /* Expand to full width */
+      }
+      /*100% {
+        width: 0%; /* Shrink back to 0%
+      }*/
+    }
+
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#a13aba;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.img2
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.st1
+{
+    text-decoration: none;
+}
+.span1
+{
+    display: inline-block;
+    background-color: #a13aba;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 50px;
+    padding-left: 8px;
+    padding-top: 1px;
+    padding-bottom: 6px;
+    color: white;
+}
