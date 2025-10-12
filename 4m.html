@@ -44,22 +44,29 @@
         <br>
         <br>
     </div>
+              <br>
+    <br>
+    <br>
+<p id="txt1"></p>
 </center>
 <script>
      const x1=document.getElementById("song1");
-     x1.play();
-     var y=(x1.duration)*1.01;
-     console.log(y);
+     var x2= document.getElementById("txt1");
+    
      let isplay=false;
     function fun2()
     {
        x1.play();
        isplay=true;
+         x2.innerHTML="Playing";
     }
     function fun3()
     {
         isplay=false;
        x1.pause();
+        
+     x2.innerHTML="Paused";
+
        
     }
     function fun1()
@@ -82,3 +89,4 @@
 </body>
 
 </html>
+
